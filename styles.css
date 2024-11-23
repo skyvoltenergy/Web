@@ -1,0 +1,368 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin-bottom: 0.8em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #34C759;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    transition: background-color 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: 10px;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/* Hero Styles */
+.hero {
+    background: linear-gradient(to bottom, #34C759, #8BC34A);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+    color: #333;
+    animation: hero-animation 2s;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.hero img {
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 2em;
+    max-width: 600px;
+}
+
+.hero .cta-button { /* Style the button specifically within .hero */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Make it a block element for better styling */
+}
+
+
+/* Benefits Styles */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.benefit {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit:hover {
+    transform: scale(1.1);
+}
+
+.benefit i {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #34C759;
+}
+
+.benefit p {
+    font-size: 1em;
+}
+
+
+/* Services Styles */
+.services {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    animation: services-animation 2s;
+    padding: 40px;
+}
+
+.services h1 {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.service {
+    background-color: white;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.service i {
+    font-size: 2em;
+    margin-right: 1em;
+    color: #34C759;
+}
+
+.service h2 {
+    margin-bottom: 0.5em;
+    flex: 1;
+}
+
+.service p {
+    flex: 1;
+}
+
+
+/* About Us Styles */
+.about {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    animation: about-animation 2s;
+    padding: 40px;
+}
+
+.about section {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about h1, .about h2, .about p {
+    text-align: center;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* Contact Us Styles */
+.contact {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    animation: contact-animation 2s;
+    padding: 40px;
+}
+
+.contact h1 {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+}
+
+
+/* Animations */
+@keyframes hero-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes services-animation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes about-animation {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes contact-animation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .benefit {
+        width: 45%;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .about section {
+        max-width: 90%;
+    }
+    .contact form {
+        max-width: 90%;
+    }
+}
+
+/* Add padding to the top of the body to prevent text from being cut off */
+body {
+    padding-top: 60px;
+}
